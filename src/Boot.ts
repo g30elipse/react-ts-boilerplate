@@ -6,8 +6,8 @@ const VALIDATE_CONFIG_PROPERTIES = ['BASE_URL'];
 const validateConfig = () => {
     VALIDATE_CONFIG_PROPERTIES.forEach(key => {
         const val = Config.get(key);
-        if (!val)
-            throw new Error(`App config must define ${key}`);
+        // if (!val)
+        //     throw new Error(`App config must define ${key}`);
     });
 
 }
